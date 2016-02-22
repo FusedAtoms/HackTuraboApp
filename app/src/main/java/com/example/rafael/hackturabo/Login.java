@@ -15,6 +15,7 @@ public class Login extends ActionBarActivity {
     String allowed_password = getRegister.wPass;
     String allowed_ID = getRegister.wID;
 //This is a test.
+    //This is a second test.
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
