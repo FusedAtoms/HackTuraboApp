@@ -14,7 +14,7 @@ public class Login extends ActionBarActivity {
     String allowed_user = getRegister.wUsername;
     String allowed_password = getRegister.wPass;
     String allowed_ID = getRegister.wID;
-//Si ya funciona! @ 20:27
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -31,7 +31,7 @@ public class Login extends ActionBarActivity {
                         if(user.equals(allowed_user)&&pass.equals(allowed_password))
                             startActivity(new Intent(Login.this, Home.class));
                         else
-                            Toast.makeText(getApplicationContext(), "Invalid credentails!", Toast.LENGTH_LONG).show();
+/* Spelling Correction */ Toast.makeText(getApplicationContext(), "Invalid credentials!", Toast.LENGTH_LONG).show();
                     }
                 }
         );
