@@ -6,6 +6,7 @@ import android.support.v7.app.ActionBarActivity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageButton;
 import android.widget.Toast;
 
 public class Home extends ActionBarActivity {
@@ -15,10 +16,10 @@ public class Home extends ActionBarActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
 
-        Button btnTest = (Button)findViewById(R.id.imageButton);
+        ImageButton btnTest = (ImageButton)findViewById(R.id.imageButton);
         btnTest.setOnClickListener(
-                new Button.OnClickListener(){
-                    public void onClick(View v){
+                new Button.OnClickListener() {
+                    public void onClick(View v) {
                         startActivity(new Intent(Home.this, Menu.class));
                     }
                 });
