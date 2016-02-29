@@ -30,7 +30,7 @@ public class Login extends ActionBarActivity {
                         String user = logUsername.getText().toString();
                         String pass = logPassword.getText().toString();
                         if(user.equals(allowed_user)&&pass.equals(allowed_password))
-                            startActivity(new Intent(Login.this, MainActivity.class));
+                            startActivity(new Intent(Login.this, Home.class));
                         else
                          Toast.makeText(getApplicationContext(), "Invalid credentials!", Toast.LENGTH_LONG).show();
                     }
