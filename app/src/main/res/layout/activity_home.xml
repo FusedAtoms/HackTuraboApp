@@ -18,7 +18,7 @@
         android:gravity="center"
         android:fontFamily="Helvetica Neue"
         android:textStyle="bold"
-        android:layout_alignTop="@+id/textView2"
+        android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true" />
 
@@ -32,7 +32,7 @@
         android:fontFamily="Helvetica Neue"
         android:textStyle="bold"
         android:gravity="center_vertical|center_horizontal"
-        android:layout_above="@+id/textView3"
+        android:layout_alignTop="@+id/textView"
         android:layout_toRightOf="@+id/textView"
         android:layout_toEndOf="@+id/textView" />
 
@@ -45,19 +45,52 @@
         android:textColor="#ffffff"
         android:fontFamily="Helvetica Neue"
         android:textStyle="bold"
-        android:layout_centerVertical="true"
-        android:layout_centerHorizontal="true" />
+        android:layout_below="@+id/textView"
+        android:layout_toLeftOf="@+id/ht"
+        android:layout_toStartOf="@+id/ht" />
 
     <ImageButton
-        android:layout_width="fill_parent"
-        android:layout_height="match_parent"
-        android:id="@+id/imageButton"
-        android:layout_below="@+id/textView3"
-        android:layout_marginTop="64dp"
-        android:background="@drawable/unnamed"
+        android:layout_width="80dp"
+        android:layout_height="75dp"
+        android:id="@+id/fb"
+        android:background="@drawable/fblogo"
+        android:layout_alignParentBottom="true"
+        android:layout_toLeftOf="@+id/pr"
+        android:layout_toStartOf="@+id/pr" />
+
+    <ImageButton
+        android:layout_width="80dp"
+        android:layout_height="75dp"
+        android:id="@+id/pr"
+        android:background="@drawable/prlogo"
+        android:layout_alignParentBottom="true"
+        android:layout_toLeftOf="@+id/tw"
+        android:layout_toStartOf="@+id/tw" />
+
+    <ImageButton
+        android:layout_width="80dp"
+        android:layout_height="75dp"
+        android:id="@+id/ht"
+        android:background="@drawable/htlogo"
+        android:layout_alignParentBottom="true"
         android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:layout_alignParentEnd="true" />
+
+    <ImageButton
+        android:layout_width="80dp"
+        android:layout_height="75dp"
+        android:id="@+id/tw"
+        android:background="@drawable/twlogo"
+        android:layout_alignParentBottom="true"
+        android:layout_toLeftOf="@+id/ht"
+        android:layout_toStartOf="@+id/ht" />
+
+    <ImageButton
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:id="@+id/qrBtn"
+        android:background="@drawable/qrlogo"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
 
 </RelativeLayout>

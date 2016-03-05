@@ -2,14 +2,12 @@ package com.example.rafael.hackturabo;
 
 import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
+import android.view.Window;
 import android.widget.EditText;
 import android.widget.TextView;
 
 public class Menu extends ActionBarActivity {
 
-    @Override
-    public void onBackPressed() {
-    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
