@@ -34,7 +34,8 @@
         android:gravity="center_vertical|center_horizontal"
         android:layout_alignTop="@+id/textView"
         android:layout_toRightOf="@+id/textView"
-        android:layout_toEndOf="@+id/textView" />
+        android:layout_toEndOf="@+id/textView"
+        android:focusableInTouchMode="false" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -46,8 +47,7 @@
         android:fontFamily="Helvetica Neue"
         android:textStyle="bold"
         android:layout_below="@+id/textView"
-        android:layout_toLeftOf="@+id/ht"
-        android:layout_toStartOf="@+id/ht" />
+        android:layout_centerHorizontal="true" />
 
     <ImageButton
         android:layout_width="80dp"
@@ -86,11 +86,122 @@
         android:layout_toStartOf="@+id/ht" />
 
     <ImageButton
-        android:layout_width="80dp"
-        android:layout_height="80dp"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
         android:id="@+id/qrBtn"
         android:background="@drawable/qrlogo"
-        android:layout_centerVertical="true"
+        android:layout_above="@+id/project"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="53dp" />
+
+    <ImageButton
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/news"
+        android:background="@drawable/newslogo"
+        android:layout_alignTop="@+id/qrBtn"
         android:layout_centerHorizontal="true" />
+
+    <ImageButton
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/calendar"
+        android:background="@drawable/calendarlogo"
+        android:layout_alignTop="@+id/news"
+        android:layout_alignLeft="@+id/sign_in"
+        android:layout_alignStart="@+id/sign_in" />
+
+    <ImageButton
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/sign_in"
+        android:background="@drawable/loginlogo"
+        android:layout_above="@+id/ht"
+        android:layout_alignRight="@+id/ht"
+        android:layout_alignEnd="@+id/ht"
+        android:layout_marginBottom="53dp" />
+
+    <ImageButton
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/helpful"
+        android:background="@drawable/helplogo"
+        android:layout_alignTop="@+id/sign_in"
+        android:layout_centerHorizontal="true" />
+
+    <ImageButton
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/project"
+        android:background="@drawable/event"
+        android:layout_alignTop="@+id/helpful"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="   QR Code"
+        android:id="@+id/textView12"
+        android:textColor="#ffffff"
+        android:layout_below="@+id/news"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="News"
+        android:id="@+id/textView13"
+        android:textColor="#ffffff"
+        android:layout_below="@+id/news"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="    Calendar"
+        android:id="@+id/textView14"
+        android:textColor="#ffffff"
+        android:layout_alignLeft="@+id/calendar"
+        android:layout_alignStart="@+id/calendar"
+        android:layout_below="@+id/calendar" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Projects"
+        android:id="@+id/textView15"
+        android:textColor="#ffffff"
+        android:layout_below="@+id/project"
+        android:layout_alignRight="@+id/textView12"
+        android:layout_alignEnd="@+id/textView12" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Helpful Links"
+        android:id="@+id/textView16"
+        android:textColor="#ffffff"
+        android:layout_alignTop="@+id/textView15"
+        android:layout_alignRight="@+id/helpful"
+        android:layout_alignEnd="@+id/helpful" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Sign In"
+        android:id="@+id/textView17"
+        android:textColor="#ffffff"
+        android:layout_alignTop="@+id/textView16"
+        android:layout_alignRight="@+id/textView2"
+        android:layout_alignEnd="@+id/textView2" />
 
 </RelativeLayout>

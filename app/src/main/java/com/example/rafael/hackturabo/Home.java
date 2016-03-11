@@ -11,7 +11,7 @@ import android.widget.ImageButton;
 import android.widget.Toast;
 
 public class Home extends ActionBarActivity {
-
+    Login login = new Login();
     @Override
     public void onBackPressed() {
     }
@@ -27,11 +27,56 @@ public class Home extends ActionBarActivity {
         ImageButton btnTW = (ImageButton)findViewById(R.id.tw);
         ImageButton btnHT = (ImageButton)findViewById(R.id.ht);
         ImageButton btnQR = (ImageButton)findViewById(R.id.qrBtn);
+        ImageButton btnNews = (ImageButton)findViewById(R.id.news);
+        ImageButton btnCal = (ImageButton)findViewById(R.id.calendar);
+        ImageButton btnProj = (ImageButton)findViewById(R.id.project);
+        ImageButton btnHelp = (ImageButton)findViewById(R.id.helpful);
+        ImageButton btnSign = (ImageButton)findViewById(R.id.sign_in);
+
+
 
         btnQR.setOnClickListener(
                 new Button.OnClickListener(){
                     public void onClick(View v){
-                        startActivity(new Intent(Home.this, QR_Code.class));
+                        if(login.signinFlag)
+                            startActivity(new Intent(Home.this, QR_Code.class));
+                        else
+                            Toast.makeText(getApplicationContext(), "You must be signed in!", Toast.LENGTH_LONG).show();
+                    }
+                }
+        );
+        btnSign.setOnClickListener(
+                new Button.OnClickListener(){
+                    public void onClick(View v){
+                        startActivity(new Intent(Home.this, MainActivity.class));
+                    }
+                }
+        );
+        btnNews.setOnClickListener(
+                new Button.OnClickListener(){
+                    public void onClick(View v){
+                        startActivity(new Intent(Home.this, News.class));
+                    }
+                }
+        );
+        btnCal.setOnClickListener(
+                new Button.OnClickListener(){
+                    public void onClick(View v){
+                        startActivity(new Intent(Home.this, Calendar.class));
+                    }
+                }
+        );
+        btnProj.setOnClickListener(
+                new Button.OnClickListener(){
+                    public void onClick(View v){
+                        startActivity(new Intent(Home.this, Projects.class));
+                    }
+                }
+        );
+        btnHelp.setOnClickListener(
+                new Button.OnClickListener(){
+                    public void onClick(View v){
+                        startActivity(new Intent(Home.this, HelpfulLinks.class));
                     }
                 }
         );
